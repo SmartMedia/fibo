@@ -8,6 +8,10 @@ module Fibo
     @canvas_page || raise_unconfigured_exception
   end
 
+  def self.minimal_age
+    @minimal_age || raise_unconfigured_exception
+  end
+
   def self.scope
     @scope || raise_unconfigured_exception
   end
@@ -17,7 +21,7 @@ module Fibo
   end
 
   def self.configuration=(hash)
-    self.minimal_age = hash[:minimal_age]
+    self.minimal_age = hash[:minimal_age] ? hash[:minimal_age] : 0
     self.canvas_page = hash[:canvas_page]
     self.scope       = hash[:scope]
     self.oauth_dialog_url = 'https://www.facebook.com/dialog/oauth'
