@@ -10,12 +10,12 @@ module Fibo
       end
 
       def authenticate_facebook_user!
-        # TODO ensuer Facebooker2 controller is already loaded
+        # TODO ensure Facebooker2 controller is already loaded
         render :partial => 'fibo/permissions' unless current_facebook_user
       end
 
       def validate_age!
-        # TODO ensuer Facebooker2 controller is already loaded
+        # TODO ensure Facebooker2 controller is already loaded
         render :partial => 'fibo/invalid_age' if facebook_params["user"]["age"]["min"] < Fibo.minimal_age
       end
 
