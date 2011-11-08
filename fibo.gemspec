@@ -5,7 +5,6 @@ spec = Gem::Specification.new do |s|
   s.description = "Speed up your facebook contest development"
   s.files = Dir['lib/**/*.rb']
   s.require_path = 'lib'
-  s.has_rdoc = false
   s.author = "Josef Šimánek"
   s.email = "retro@ballgag.cz"
   s.homepage = "http://github.com/SmartMedia/fibo"
