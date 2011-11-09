@@ -17,7 +17,7 @@ module Fibo
   end
 
   def self.raise_unconfigured_exception
-    raise NotConfigured.new("No configuration provided for Fibo. Either set the cancas_page and scope or call Fibo.load_fibo_yaml in an initializer")
+    raise NotConfigured.new("No configuration provided for Fibo. Either set the canvas_page and scope or call Fibo.load_fibo_yaml in an initializer")
   end
 
   def self.configuration=(hash)
