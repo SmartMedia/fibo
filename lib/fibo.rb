@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module Fibo
   class NotConfigured < Exception; end
   class << self
