@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 spec = Gem::Specification.new do |s|
   s.name = 'fibo'
   s.version = '0.0.1'
